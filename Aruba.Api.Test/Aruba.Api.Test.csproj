@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <!-- CS0436: Refit 12 transitively runs the ReactiveUI.Primitives source generator, which emits
@@ -22,7 +22,8 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="xunit.v3" />
     <PackageReference Include="xunit.runner.visualstudio" />
-  <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" PrivateAssets="all" /></ItemGroup>
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" PrivateAssets="all" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Aruba.Api\Aruba.Api.csproj" />
   </ItemGroup>
