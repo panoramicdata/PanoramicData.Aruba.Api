@@ -12,7 +12,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>Logo.png</PackageIcon>
-    <Description>.NET 10 API client for HPE Aruba Networking Central (New Central): monitoring, notifications, reporting, services and troubleshooting. OAuth 2.0 client-credentials auth with automatic token refresh, retry/back-off and read-only safety.</Description>
+    <Description>.NET API client for HPE Aruba Networking Central (New Central): monitoring, notifications, reporting, services and troubleshooting. OAuth 2.0 client-credentials auth with automatic token refresh, retry/back-off and read-only safety.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

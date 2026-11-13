@@ -9,9 +9,11 @@
 [![NuGet](https://img.shields.io/nuget/v/PanoramicData.Aruba.Api.svg)](https://www.nuget.org/packages/PanoramicData.Aruba.Api)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bb86df3b2bde46a1b30ecf539f9b5744)](https://app.codacy.com/gh/panoramicdata/Aruba.Api/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4.svg)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-11.0-512BD4.svg)](https://dotnet.microsoft.com/)
 
-A modern, strongly-typed .NET 10 client for the **HPE Aruba Networking Central (New Central)** REST API.
+A modern, strongly-typed .NET 11.0 client for the **HPE Aruba Networking Central (New Central)** REST API.
+
+Supports .NET 11.0.
 
 It handles OAuth 2.0 authentication, token refresh, transient-error retries and read-only safety for you, and exposes each API area through clean, [Refit](https://github.com/reactiveui/refit)-backed interfaces.
 
@@ -189,7 +191,7 @@ typed surface grows; contributions adding typed models are welcome — see
 
 ## Quality
 
-- Targets `net10.0`, builds with `TreatWarningsAsErrors` and nullable reference types enabled.
+- Targets `net11.0`, builds with `TreatWarningsAsErrors` and nullable reference types enabled.
 - Deterministic versioning via [Nerdbank.GitVersioning](https://github.com/dotnet/Nerdbank.GitVersioning).
 - Symbols (`snupkg`) published for source debugging.
 - Unit tests run on xUnit v3 with `failSkips` enforced.
