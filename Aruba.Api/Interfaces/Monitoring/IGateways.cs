@@ -43,10 +43,6 @@ public interface IGateways
 	[Get("/network-monitoring/v1/gateways/{serialNumber}/cpu-utilization-trends")]
 	Task<TrendResponse> GetCpuUtilizationTrendsAsync(string serialNumber, TimeRangeQuery? query = null, CancellationToken cancellationToken = default);
 
-	/// <summary>Gets memory utilisation trends for a gateway.</summary>
-	[Get("/network-monitoring/v1/gateways/{serialNumber}/memory-utilization-trends")]
-	Task<TrendResponse> GetMemoryUtilizationTrendsAsync(string serialNumber, TimeRangeQuery? query = null, CancellationToken cancellationToken = default);
-
 	/// <summary>Gets the DHCP pools configured on a gateway.</summary>
 	[Get("/network-monitoring/v1/gateways/{serialNumber}/dhcp-pools")]
 	Task<PagedResponse<Dictionary<string, object>>> GetDhcpPoolsAsync(string serialNumber, CancellationToken cancellationToken = default);
@@ -54,6 +50,10 @@ public interface IGateways
 	/// <summary>Gets the DHCP clients served by a gateway.</summary>
 	[Get("/network-monitoring/v1/gateways/{serialNumber}/dhcp-clients")]
 	Task<PagedResponse<Dictionary<string, object>>> GetDhcpClientsAsync(string serialNumber, CancellationToken cancellationToken = default);
+
+	/// <summary>Gets memory utilisation trends for a gateway.</summary>
+	[Get("/network-monitoring/v1/gateways/{serialNumber}/memory-utilization-trends")]
+	Task<TrendResponse> GetMemoryUtilizationTrendsAsync(string serialNumber, TimeRangeQuery? query = null, CancellationToken cancellationToken = default);
 
 	/// <summary>Gets the members of a gateway cluster.</summary>
 	[Get("/network-monitoring/v1/clusters/{clusterName}/members")]
